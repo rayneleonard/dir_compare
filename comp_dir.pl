@@ -11,6 +11,8 @@ use List::MoreUtils qw(uniq);
 my (%files1, %files2);
 my ($dir1, $dir2) = @ARGV;
 
+#error here. could fix it. too lazy. 
+
 find( sub { -f && $files1{$_} = $File::Find::name }, $dir1);
 find( sub { -f && $files2{$_} = $File::Find::name }, $dir2);
 
